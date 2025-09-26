@@ -1,10 +1,8 @@
-public class MainV1 {
+public class Main {
     public static void main(String[] args) {
-        boolean registered = true;
-        float amount = 1000.60F;
-        float percent = 0.03F;
-
-        float bonus = amount * percent;
-        System.out.println(bonus);
+        double ticketPrice = 9999.99;
+        int rublesForOneBonus = 20;
+        int milli = (int) Math.floor(ticketPrice / rublesForOneBonus);
+        System.out.println(milli);
     }
 }
