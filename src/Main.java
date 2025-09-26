@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int balance = 100;
-        int deposit_amount = 1100;
+        double balance = 100.99;
+        double depositAmount = 1_001.99;
         int limit = 1000;
-        int bonus_rate = 1;
-        int bonus_step = 100;
+        int bonusRate = 1;
+        int bonusStep = 100;
         int bonus = 0;
-        if (deposit_amount >= limit) {
-            bonus = (deposit_amount / bonus_step) * bonus_rate;
+        if (depositAmount >= limit) {
+            bonus = (int) (depositAmount / bonusStep) * bonusRate;
         }
-        int final_balance = balance + deposit_amount + bonus;
+        double final_balance = balance + depositAmount + bonus;
         System.out.println(final_balance);
     }
 }
